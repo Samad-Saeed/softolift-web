@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,7 +17,7 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +25,88 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+body{
+  background: #141716;
+}
+
+/* for navbar */
+@media only screen and (max-width: 768px) {
+  .body-font nav {
+    display: none;
+  }
+}
+
+
+/* Navbar hover */
+.hover-text:hover {
+  color: #FF5733;
+}
+
+.hover-text {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-text::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #FF5733;
+  transition: width .5s;
+  bottom: 0;
+  left: 0;
+}
+
+.hover-text:hover::after {
+  width: 100%;
+}
+
+/* for navbar scroll*/
+
+.blur-bg {
+  backdrop-filter: blur(15px);
+}
+
+/* for title */
+
+/* .title {
+  font-family: Orbitron;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: .01em;
+  color: #eceeed;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.desc {
+  font-family: noans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 800px;
+  color: #99a29e;
+} */
+
+/* Project*/
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 20px;
+  width: 1200%;
+  max-width: 2000px;
+  box-sizing: border-box;
 }
