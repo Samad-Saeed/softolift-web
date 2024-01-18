@@ -1,26 +1,60 @@
+import React from 'react'
+import Link from 'next/link'
+
 const Hero = () => {
     return (
-      <div className='flex flex-col items-center justify-center h-screen'>
+      <div className=''>
           <section className='flex flex-col items-center justify-center'>
-              <h1 className="title">Your Digital Partner</h1>
-              <p className="desc">We think that rather than being against you, technology should serve you. For this reason, we develop software solutions that enable you to grow your company.</p>
+              <h1 className="title md:text-6xl" style={{ color: '#eceeed', fontFamily: 'Orbitron, sans-serif' }}>Your Digital Partner</h1>
+              <p className="desc md:text-2xl" style={{ color: '#99a29e', fontFamily: 'sans-serif' }} >We believe that technology should work for you, not against you. That's why we create software solutions that empower you to take your business to the next level.</p>
           </section>
 
-          <div>
-          <section className=" ">
-            <h2 className="text-center font-bold text-3xl md:text-7xl text-black font-sans">Your Digital Partner</h2>
-            <br />
-            <br />
-            <p className="text-center  text-black font-sans md:text-2xl p-12">Mauris donec ociis diam magnis sapien sagittis sapien tempor volute gravida and aliquet tortor undo aliquet quaerat
-            </p>
-          </section>
-      </div>
 
-          <div className="project">
-            <div className="box">Box 1</div>
-            <div className="box">Box 2</div>
-            <div className="box">Box 3</div>
-            <div className="box">Box 4</div>
+        <div className="project">
+          {/* box 1 */}
+          <div className="box flex flex-col md:flex-row gap-5">
+            <div className="picture items-center justify-center md:w-2/3">
+              <img src="/images/pic.webp" alt="1" className="w-96 md:w-full h-36 md:h-64" />
+            </div>
+            <div className="content md:w-1/2 flex flex-col justify-center">
+              <h1 className='text-xl md:text-4xl font-bold' style={{ color: '#eceeed', fontFamily: 'Orbitron, sans-serif' }}>Hello to the future</h1>
+              <p className='text-white mt-4' style={{ color: '#99a29e', fontFamily: '' }}>In publishing and graphic design, Lorem ipsum is In publishing and graphic design, Lorem ipsum is</p>
+            </div>
+          </div>
+          {/* box 2 */}
+          <div className="box box1 flex flex-col md:flex-row gap-5">
+            <div className="picture justify-center md:w-2/3">
+              <img src="/images/pic.webp"  alt="1" className="w-full md:h-64"/>
+            </div>
+            <div className="content md:w-1/2 flex flex-col justify-center">
+              <h1 className='text-xl md:text-4xl font-bold' style={{ color: '#eceeed', fontFamily: 'Orbitron, sans-serif' }}>Hello to the future</h1>
+              <p className='text-white mt-4' style={{ color: '#99a29e', fontFamily: '' }}>In publishing and graphic design, Lorem ipsum is In publishing and graphic design, Lorem ipsum is</p>
+            </div>
+          </div>
+
+          
+          {/* box 3 */}
+
+          <div className="box  box2 flex flex-col md:flex-row gap-5">
+            <div className="picture justify-center md:w-2/3">
+              <img src="/images/pic.webp"  alt="1" className="w-full md:h-64"/>
+            </div>
+            <div className="content md:w-1/2 flex flex-col justify-center">
+              <h1 className='text-xl md:text-4xl font-bold' style={{ color: '#eceeed', fontFamily: 'Orbitron, sans-serif' }}>Hello to the future</h1>
+              <p className='text-white mt-4' style={{ color: '#99a29e', fontFamily: '' }}>In publishing and graphic design, Lorem ipsum is In publishing and graphic design, Lorem ipsum is</p>
+            </div>
+          </div>
+
+          {/* box 4 */}     
+          <div className="box box3 flex flex-col md:flex-row gap-5">
+            <div className="picture justify-center md:w-2/3">
+              <img src="/images/pic.webp"  alt="1" className="w-full md:h-64"/>
+            </div>
+            <div className="content md:w-1/2 flex flex-col justify-center">
+              <h1 className='text-xl md:text-4xl font-bold' style={{ color: '#eceeed', fontFamily: 'Orbitron, sans-serif' }}>Hello to the future</h1>
+              <p className='text-white mt-4' style={{ color: '#99a29e', fontFamily: '' }}>In publishing and graphic design, Lorem ipsum is In publishing and graphic design, Lorem ipsum is</p>
+            </div>
+          </div>
         </div>
       </div>
     )

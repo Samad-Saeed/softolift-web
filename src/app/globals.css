@@ -32,12 +32,11 @@ body{
 }
 
 /* for navbar */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   .body-font nav {
     display: none;
   }
 }
-
 
 /* Navbar hover */
 .hover-text:hover {
@@ -72,8 +71,8 @@ body{
 
 /* for title */
 
-/* .title {
-  font-family: Orbitron;
+.title {
+  font-family: 'orbitron', sans-serif;
   font-weight: 600;
   font-size: 64px;
   line-height: 130%;
@@ -84,29 +83,74 @@ body{
 }
 
 .desc {
-  font-family: noans;
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  max-width: 800px;
+  max-width: 700px;
+  padding-top: 20px;
   color: #99a29e;
-} */
+  padding-bottom: 24px;
+}
+
+
+
 
 /* Project*/
-
 .project {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .box {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  margin: 10px;
+  background-color: #1f2421;
+  /* border: 0px solid #1f2421; */
+  margin: 20px;
   padding: 20px;
-  width: 1200%;
-  max-width: 2000px;
+  height: 325px;
+  width: 100%;
+  max-width: 1125px;
   box-sizing: border-box;
+  border-radius: 30px;
+  transition: .3s ease-in-out;
+}
+
+
+.box:hover {
+  background-color: #382756;
+  border-bottom: 5px solid #6e42ca;
+  border-radius: 0;
+  transition: .3s;
+}
+
+.box1:hover {
+  background-color: #396d62;
+  border-bottom: 5px solid #11c5a1;
+  border-radius: 0;
+  transition: .3s;
+}
+
+.box2:hover {
+  background-color: #8e6d3e;
+  border-bottom: 5px solid #E08A10;
+  border-radius: 0;
+  transition: .3s;
+}
+
+.box3:hover {
+  background-color: #612d4f;
+  border-bottom: 5px solid #E93DAC;
+  border-radius: 0;
+  transition: .3s;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .box {
+    width: 90%;
+    max-width: none;
+  }
 }
