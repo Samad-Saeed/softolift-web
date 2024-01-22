@@ -23,8 +23,8 @@ const Hero = () => {
           </div>
           {/* box 2 */}
           <div className="box box1 flex flex-col md:flex-row gap-5">
-            <div className="picture justify-center md:w-2/3">
-              <img src="/images/pic.webp"  alt="1" className="w-full md:h-64"/>
+            <div className="picture items-center justify-center md:w-2/3">
+              <img src="/images/pic.webp" alt="1" className="w-96 md:w-full h-36 md:h-64" />
             </div>
             <div className="content md:w-1/2 flex flex-col justify-center">
               <h1 className='text-xl md:text-4xl font-bold' style={{ color: '#eceeed', fontFamily: 'Orbitron, sans-serif' }}>Hello to the future</h1>
@@ -35,9 +35,9 @@ const Hero = () => {
           
           {/* box 3 */}
 
-          <div className="box  box2 flex flex-col md:flex-row gap-5">
-            <div className="picture justify-center md:w-2/3">
-              <img src="/images/pic.webp"  alt="1" className="w-full md:h-64"/>
+          <div className="box box2 flex flex-col md:flex-row gap-5">
+            <div className="picture items-center justify-center md:w-2/3">
+              <img src="/images/pic.webp" alt="1" className="w-96 md:w-full h-36 md:h-64" />
             </div>
             <div className="content md:w-1/2 flex flex-col justify-center">
               <h1 className='text-xl md:text-4xl font-bold' style={{ color: '#eceeed', fontFamily: 'Orbitron, sans-serif' }}>Hello to the future</h1>
@@ -47,8 +47,8 @@ const Hero = () => {
 
           {/* box 4 */}     
           <div className="box box3 flex flex-col md:flex-row gap-5">
-            <div className="picture justify-center md:w-2/3">
-              <img src="/images/pic.webp"  alt="1" className="w-full md:h-64"/>
+            <div className="picture items-center justify-center md:w-2/3">
+              <img src="/images/pic.webp" alt="1" className="w-96 md:w-full h-36 md:h-64" />
             </div>
             <div className="content md:w-1/2 flex flex-col justify-center">
               <h1 className='text-xl md:text-4xl font-bold' style={{ color: '#eceeed', fontFamily: 'Orbitron, sans-serif' }}>Hello to the future</h1>

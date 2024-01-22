@@ -112,7 +112,7 @@ body{
   width: 100%;
   max-width: 1125px;
   box-sizing: border-box;
-  border-radius: 30px;
+  border-radius: 15px;
   transition: .3s ease-in-out;
 }
 
@@ -153,4 +153,9 @@ body{
     width: 90%;
     max-width: none;
   }
+}
+
+/* Contact scroll lock */
+.no-scroll {
+  overflow: hidden;
 }
