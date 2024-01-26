@@ -155,7 +155,33 @@ body{
   }
 }
 
-/* Contact scroll lock */
+
 .no-scroll {
   overflow: hidden;
+  padding-right: calc(100vw - 100%);
 }
+
+.contactForm {
+  overflow: auto;
+  max-height: 100vh; /* Adjust this value according to your needs */
+}
+
+/* for team section */
+
+.team-section {
+  margin: 10px;
+  padding: 20px;
+  height: 250px;
+}
+.team-section img {
+  height: 280px;
+  width: 280px;
+}
+
+
+/* .team-section:hover {
+  background-color: #382756;
+  border-bottom: 5px solid #6e42ca;
+  border-radius: 0;
+  transition: .3s;
+} */
