@@ -34,29 +34,20 @@ const Navbar = () => {
         } else {
             document.body.style.overflow = 'auto';
         }
-
+    
         // Cleanup function to reset the overflow property when the component unmounts
         return () => {
             document.body.style.overflow = 'auto';
         };
     }, [isContactOpen]);
 
-    const openContactModal = () => {
-        setIsContactOpen(true);
-    };
-
-    const closeContactModal = () => {
-        setIsContactOpen(false);
-    };
 
 
     return (
-        <header className={`body-font ${isScrolled ? 'blur-bg' : ''} sticky top-0 transition duration-150 ease-in-out z-50`} style={{ color: '#FFF'}}>
-            <div className="container mx-auto flex p-5 flex-col md:flex-row items-center">
+        <header className={`body-font ${isScrolled ? 'blur-bg' : ''} sticky top-0 transition duration-150 ease-in-out z-50`} style={{ color: '#FF5733'}}>
+            <div className="container mx-auto flex flex-col md:flex-row items-center">
                 <Link href="/" className={`flex title-font font-medium items-center mb-4 md:mb-0 ${isMobileMenuOpen ? 'justify-center' : ''}`}>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                    </svg>
+                    <img src="/images/icon.png" alt="Image" className="w-20 h-20 rounded-full" />
                     <span href="/" className={`ml-3 text-4xl font-bold ${isMobileMenuOpen ? 'justify-center' : ''}`} style={{ fontFamily: 'Orbitron, sans-serif'}}>SoftoLift</span>
                 </Link>
                 <div className="md:hidden ml-auto">
@@ -67,34 +58,26 @@ const Navbar = () => {
                     </button>
                 </div>
                 <nav className={`md:m-auto justify-center flex items-center font-bold text-xl  ${isMobileMenuOpen ? 'hidden' : ''} md:block justify-center`} style={{ fontFamily: 'Orbitron, sans-serif'}} >
-                            {(!isMobileMenuOpen && !isContactOpen) && (
-                            <>
-                                <Link href="/" className="mr-5 transition delay-75 duration-150 ease-in-out hover-text ">
-                                    Services
-                                </Link>
-                                <Link href="/about" className="mr-5 transition delay-75 duration-150 ease-in-out hover-text ">
-                                    About Us
-                                </Link>
-                                <button onClick={openContactModal} className="mr-5 transition delay-75 duration-150 ease-in-out hover-text ">
-                                    Contact Us
-                                </button>
-                            </>
-                        )}
+                    {
+                        !isMobileMenuOpen && (
+                        <>
+                        <Link href="/" className="mr-5 transition delay-75 duration-150 ease-in-out hover-text ">Services</Link>
+                        <Link href="/about" className="mr-5 transition delay-75 duration-150 ease-in-out hover-text ">About Us</Link>
+                        <button onClick={() => setIsContactOpen(true)} className="mr-5 transition delay-75 duration-150 ease-in-out hover-text ">Contact Us</button>
+                        </>
+                        )
+                    }
                 </nav>
                 {isContactOpen && (
-                        <div className="modal-overlay" onClick={closeContactModal}>
-                            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                                <button className="float-right mr-5 mt-5" onClick={closeContactModal}>
-                                    X
-                                </button>
-                                <Contact />
-                            </div>
-                        </div>
-                    )}
+                    <div style={{ position: 'fixed', top: 0, right: 0, width: '100%', height: '100%', backgroundColor: '#141817' }}>
+                    <button className="float-right mr-5 mt-5  "onClick={() => setIsContactOpen(false)}>X</button>
+                    <Contact />
+                    </div>
+                )}
                 {isMobileMenuOpen && (
                     <div className="flex flex-col items-center text-xl" style={{maxWidth: '768px'}}>
                         <Link href="/" className="my-2 transition delay-75 duration-150 ease-in-out hover-text ">Services</Link>
-                        <Link href="/" className="my-2 transition delay-75 duration-150 ease-in-out hover-text ">About Us</Link>
+                        <Link href="/about" className="my-2 transition delay-75 duration-150 ease-in-out hover-text ">About Us</Link>
                         <Link href="/" className="my-2 transition delay-75 duration-150 ease-in-out hover-text ">Contact Us</Link>
                     </div>
                 )}

@@ -22,12 +22,12 @@ const Footer = () => {
                 <div className="mb-6 md:mb-0">
                     <a href="" className="flex items-center">
                         <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 me-3" alt="FlowBite Logo" />
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white" style={h2Style}>SoftoLift</span>
+                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-black" style={h2Style}>SoftoLift</span>
                     </a>
                 </div>
                 <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 md:grid-cols-4">
                     <div>
-                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white" style={h2Style}>Project</h2>
+                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-black" style={h2Style}>Project</h2>
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
                             <li className="mb-4">
                                 <a href="https://flowbite.com/" className="hover:underline">Next.js</a>
@@ -41,7 +41,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white" style={h2Style}>Company</h2>
+                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-black" style={h2Style}>Company</h2>
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
                             <li className="mb-4">
                                 <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Home</a>
@@ -55,7 +55,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white" style={h2Style} >Follow us</h2>
+                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-black" style={h2Style} >Follow us</h2>
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
                             <li className="mb-4">
                                 <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Github</a>
@@ -75,7 +75,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white" style={h2Style} >Legal</h2>
+                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-black" style={h2Style} >Legal</h2>
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
                             <li className="mb-4">
                                 <a href="#" className="hover:underline">Privacy Policy</a>
