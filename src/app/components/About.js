@@ -61,16 +61,18 @@ export default function about() {
             {/* Our Services End */}
 
 
-            <div className="bg-black" style={{}}>
-                <div className="container mx-auto">
-                    <div className="flex flex-col items-center justify-center text-center p-10">
-                        <h1 className="text-white font-bold text-2xl md:text-4xl " style={{ fontFamily: 'Orbitron, sans-serif' }}>Our Process</h1>
-                        <div class="border-t border-orange-900 my-16"></div>
-                        <p className="text-white justify-between mt-5 md:text-xl ">We offer a wide range of web development services, from simple landing pages to complex web applications. We use the latest technologies to ensure that your website is fast, secure, and responsive.</p>
-                    </div>
-                </div>
+            <div class="known-for-section flex flex-col  md:flex-row items-center justify-center" style={{ alignItems: 'center', backgroundColor: "white" }}>
+    <h2 style={{ fontFamily: "orbitron", fontWeight: "bold"}}>What we’re known for</h2>
+    <div className="mobile-view"></div>
+    <img alt="Figma" src="images/vue.svg" class="figma" loading="lazy" style={{ color: 'transparent', width: '20%', maxWidth: '70px', height: 'auto', margin: '0 auto' }} />
+    <img alt="Figma" src="images/python.svg" class="figma" loading="lazy" style={{ color: 'transparent', width: '20%', maxWidth: '70px', height: 'auto', margin: '0 auto' }} />
+    <img alt="Figma" src="images/figma.svg" class="figma" loading="lazy" style={{ color: 'transparent', width: '20%', maxWidth: '70px', height: 'auto', margin: '0 auto' }} />
+    <img alt="NextJS" src="images/django.svg" class="next" loading="lazy" style={{ color: 'transparent', width: '20%', maxWidth: '70px', height: 'auto', margin: '0 auto' }} />
+    <img alt="VueJS" src="images/next.svg" class="vue" loading="lazy" style={{ color: 'transparent', width: '20%', maxWidth: '70px', height: 'auto', margin: '0 auto' }} />
+    <img alt="Vercel" src="images/vercel.svg" class="vercel" loading="lazy" style={{ color: 'transparent', width: '20%', maxWidth: '70px', height: 'auto', margin: '0 auto' }} />
+</div>
 
-            </div>
+
             
 
 

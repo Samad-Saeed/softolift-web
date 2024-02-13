@@ -39,7 +39,7 @@ const Hero = () => {
                         </div>
 
                         <div className='pl-5 md:pl-0 lg:pl-20 mb-24 md:w-full lg:w-3/4' style={{ maxWidth: '800px' }}>
-                          <Main></Main>
+                          {/* <Main></Main> */}
                         </div>
                       </div>
 
