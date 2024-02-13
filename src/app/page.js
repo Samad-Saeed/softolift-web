@@ -13,12 +13,12 @@ export default function Home() {
   return (
     <div>
       <Navbar></Navbar>
-      <div style={{backgroundColor:'' }}>
+      <div style={{background: ''}}>
         <Hero />
       </div>
 
 
-      <div style={{backgroundColor:'#f3f3f3'}}>
+      <div style={{backgroundColor:'#e3e3e3'}}>
         <About />
       </div>
     

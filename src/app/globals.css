@@ -21,14 +21,12 @@
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      white,
+      white
+    );
 } */
 
 body{
-  /* background: #ffefdb; */
   background: #fffefa;
   
 }
@@ -44,6 +42,11 @@ body{
 .hover-text:hover {
   color: #FF5733;
 }
+
+.hover-text:hover {
+  color: #f9aa43;
+}
+
 
 .hover-text {
   position: relative;
@@ -100,7 +103,7 @@ body{
 }
 
 .box {
-  background-color: #f3f3f3;
+  background-color: #e3e3e3;
   /* border: 0px solid #1f2421; */
   margin: 20px;
   padding: 20px;
@@ -172,6 +175,18 @@ body{
 .team-section img {
   height: 280px;
   width: 280px;
+}
+
+.team-section h2{
+  color: #000000;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
+}
+
+.team-section p{
+  color: #949696;
+  font-family: 'nato', sans-serif;
+  letter-spacing: 1px;
 }
 
 .services h1 {
