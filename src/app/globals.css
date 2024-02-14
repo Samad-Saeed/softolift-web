@@ -17,6 +17,9 @@
   }
 }
 
+
+
+
 /* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -206,4 +209,42 @@ body{
   border-radius: 0;
   transition: .3s;
 } */
+
+
+
+.known-for-section {
+  align-items: center;
+  background-color: #e96c2ec4;
+  border: 5px solid #949696;
+  padding: 10px;
+}
+
+.known-for-section h2 {
+  font-family: "orbitron";
+  font-weight: bold;
+}
+
+.known-for-section img {
+  color: transparent;
+  width: 20%;
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out; /* Adding a transition effect */
+}
+
+.known-for-section img:hover {
+  transform: rotate(360deg); /* Rotate the image 360 degrees on hover */
+}
+
+.mobile-view {
+  height: 40px; /* Set a specific height for mobile view */
+}
+
+@media (min-width: 768px) {
+  .known-for-section {
+    height: 200px; /* Adjust the height for larger screens */
+  }
+}
+
 
