@@ -61,16 +61,16 @@ export default function about() {
             {/* Our Services End */}
 
 
-            <div class="known-for-section flex flex-col  md:flex-row items-center justify-center" style={{ alignItems: 'center', backgroundColor: "white" }}>
-    <h2 style={{ fontFamily: "orbitron", fontWeight: "bold"}}>What we’re known for</h2>
-    <div className="mobile-view"></div>
-    <img alt="Figma" src="images/vue.svg" class="figma" loading="lazy" style={{ color: 'transparent', width: '20%', maxWidth: '70px', height: 'auto', margin: '0 auto' }} />
-    <img alt="Figma" src="images/python.svg" class="figma" loading="lazy" style={{ color: 'transparent', width: '20%', maxWidth: '70px', height: 'auto', margin: '0 auto' }} />
-    <img alt="Figma" src="images/figma.svg" class="figma" loading="lazy" style={{ color: 'transparent', width: '20%', maxWidth: '70px', height: 'auto', margin: '0 auto' }} />
-    <img alt="NextJS" src="images/django.svg" class="next" loading="lazy" style={{ color: 'transparent', width: '20%', maxWidth: '70px', height: 'auto', margin: '0 auto' }} />
-    <img alt="VueJS" src="images/next.svg" class="vue" loading="lazy" style={{ color: 'transparent', width: '20%', maxWidth: '70px', height: 'auto', margin: '0 auto' }} />
-    <img alt="Vercel" src="images/vercel.svg" class="vercel" loading="lazy" style={{ color: 'transparent', width: '20%', maxWidth: '70px', height: 'auto', margin: '0 auto' }} />
-</div>
+            <div class="known-for-section flex flex-col md:flex-row items-center justify-center">
+                <h2>What we’re known for</h2>
+                <div class="mobile-view"></div>
+                <img alt="Figma" src="images/vue.svg" />
+                <img alt="Figma" src="images/python.svg" />
+                <img alt="Figma" src="images/figma.svg" />
+                <img alt="NextJS" src="images/django.svg" />
+                <img alt="VueJS" src="images/next.svg" />
+                <img alt="Vercel" src="images/vercel.svg" />
+            </div>
 
 
             
