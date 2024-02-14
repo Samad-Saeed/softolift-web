@@ -215,7 +215,7 @@ body{
 .known-for-section {
   align-items: center;
   background-color: #e96c2ec4;
-  border: 5px solid #949696;
+  border: 2px solid #949696;
   padding: 10px;
 }
 
@@ -234,7 +234,8 @@ body{
 }
 
 .known-for-section img:hover {
-  transform: rotate(360deg); /* Rotate the image 360 degrees on hover */
+  transform: scale(1.2); /* Increase the size of the image on hover */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
 
 .mobile-view {

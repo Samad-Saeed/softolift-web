@@ -61,15 +61,15 @@ export default function about() {
             {/* Our Services End */}
 
 
-            <div className="bg-black" style={{}}>
-                <div className="container mx-auto">
-                    <div className="flex flex-col items-center justify-center text-center p-10">
-                        <h1 className="text-white font-bold text-2xl md:text-4xl " style={{ fontFamily: 'Orbitron, sans-serif' }}>Our Process</h1>
-                        <div class="border-t border-orange-900 my-16"></div>
-                        <p className="text-white justify-between mt-5 md:text-xl ">We offer a wide range of web development services, from simple landing pages to complex web applications. We use the latest technologies to ensure that your website is fast, secure, and responsive.</p>
-                    </div>
-                </div>
-
+            <div class="known-for-section flex flex-col md:flex-row items-center justify-center">
+                <h2>What we’re known for</h2>
+                <div class="mobile-view"></div>
+                <img alt="Figma" src="images/vue.svg" />
+                <img alt="Figma" src="images/python.svg" />
+                <img alt="Figma" src="images/figma.svg" />
+                <img alt="NextJS" src="images/django.svg" />
+                <img alt="VueJS" src="images/next.svg" />
+                <img alt="Vercel" src="images/vercel.svg" />
             </div>
 
 
