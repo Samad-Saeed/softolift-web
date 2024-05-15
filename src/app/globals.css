@@ -170,6 +170,7 @@ body{
 
 /* for team section */
 
+<<<<<<< HEAD
 
 
 
@@ -182,16 +183,22 @@ body{
 
 
 
+=======
+>>>>>>> c6e0f8250c5a7efe1388e1039c967fb45d2adb76
 .team-section {
   margin: 10px;
   padding: 20px;
   height: 250px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c6e0f8250c5a7efe1388e1039c967fb45d2adb76
 .team-section img {
   height: 280px;
   width: 280px;
 }
+<<<<<<< HEAD
 .team-section img:hover {
   transform: scale(2.4); /* Increase the size of the image on hover */
   transition: transform 0.3s ease-in; /* Add a smooth transition effect */
@@ -207,6 +214,8 @@ body{
 
 
 
+=======
+>>>>>>> c6e0f8250c5a7efe1388e1039c967fb45d2adb76
 
 .team-section h2{
   color: #000000;
@@ -276,3 +285,7 @@ body{
   }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c6e0f8250c5a7efe1388e1039c967fb45d2adb76
