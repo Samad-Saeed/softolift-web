@@ -1,0 +1,278 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      white,
+      white
+    );
+} */
+
+body{
+  background: #fffefa;
+  
+}
+
+/* for navbar */
+@media only screen and (max-width: 769px) {
+  .body-font nav {
+    display: none;
+  }
+}
+
+/* Navbar hover */
+.hover-text:hover {
+  color: #FF5733;
+}
+
+.hover-text:hover {
+  color: #f9aa43;
+}
+
+
+.hover-text {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-text::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #FF5733;
+  transition: width .5s;
+  bottom: 0;
+  left: 0;
+}
+
+.hover-text:hover::after {
+  width: 100%;
+}
+
+/* for navbar scroll*/
+
+.blur-bg {
+  backdrop-filter: blur(15px);
+}
+
+/* for title */
+
+
+.desc {
+  font-size: 20px;
+  font-weight: 450;
+  line-height: 150%;
+  max-width: 700px;
+  padding-top: 20px;
+  color:#212121;
+  padding-bottom: 24px;
+}
+
+
+
+
+/* Project*/
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project h1{
+  color: rgb(0, 0, 0);
+}
+
+.box {
+  background-color: #e3e3e3;
+  /* border: 0px solid #1f2421; */
+  margin: 20px;
+  padding: 20px;
+  height: 325px;
+  width: 100%;
+  max-width: 1125px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  transition: .3s ease-in-out;
+}
+
+
+.box:hover {
+  background-color: #382756;
+  border-bottom: 5px solid #6e42ca;
+  border-radius: 0;
+  transition: .3s;
+}
+
+.box1:hover {
+  background-color: #396d62;
+  border-bottom: 5px solid #11c5a1;
+  border-radius: 0;
+  transition: .3s;
+}
+
+.box2:hover {
+  background-color: #8e6d3e;
+  border-bottom: 5px solid #E08A10;
+  border-radius: 0;
+  transition: .3s;
+}
+
+.box3:hover {
+  background-color: #612d4f;
+  border-bottom: 5px solid #E93DAC;
+  border-radius: 0;
+  transition: .3s;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .box {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+
+.no-scroll {
+  overflow: hidden;
+  padding-right: calc(100vw - 100%);
+}
+
+.contactForm {
+  overflow: auto;
+  max-height: 100vh; /* Adjust this value according to your needs */
+}
+
+/* for team section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.team-section {
+  margin: 10px;
+  padding: 20px;
+  height: 250px;
+}
+
+.team-section img {
+  height: 280px;
+  width: 280px;
+}
+.team-section img:hover {
+  transform: scale(2.4); /* Increase the size of the image on hover */
+  transition: transform 0.3s ease-in; /* Add a smooth transition effect */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.team-section h2{
+  color: #000000;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
+}
+
+.team-section p{
+  color: #949696;
+  font-family: 'nato', sans-serif;
+  letter-spacing: 1px;
+}
+
+.services h1 {
+  color: #ff6d33;
+}
+
+.border-t {
+  filter: blur(1px);
+  opacity: 0.4;
+}
+
+
+
+/* .team-section:hover {
+  background-color: #382756;
+  border-bottom: 5px solid #6e42ca;
+  border-radius: 0;
+  transition: .3s;
+} */
+
+
+
+.known-for-section {
+  align-items: center;
+  background-color: #e96c2ec4;
+  border: 2px solid #949696;
+  padding: 10px;
+}
+
+.known-for-section h2 {
+  font-family: "orbitron";
+  font-weight: bold;
+}
+
+.known-for-section img {
+  color: transparent;
+  width: 20%;
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out; /* Adding a transition effect */
+}
+
+.known-for-section img:hover {
+  transform: scale(1.2); /* Increase the size of the image on hover */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.mobile-view {
+  height: 40px; /* Set a specific height for mobile view */
+}
+
+@media (min-width: 768px) {
+  .known-for-section {
+    height: 200px; /* Adjust the height for larger screens */
+  }
+}
+
