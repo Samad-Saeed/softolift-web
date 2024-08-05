@@ -163,10 +163,14 @@ body{
   padding-right: calc(100vw - 100%);
 }
 
-.contactForm {
-  overflow: auto;
-  max-height: 100vh; /* Adjust this value according to your needs */
+html {
+  scroll-behavior: smooth;
 }
+
+/* .contactForm {
+  overflow: auto;
+  max-height: 100vh;
+}  */
 
 /* for team section */
 

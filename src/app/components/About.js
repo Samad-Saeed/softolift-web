@@ -1,20 +1,20 @@
-
+import Maps from './Map/Maps'
 
 export default function about() {
     return (
-        <div >
+        <div id='aboutus' className="text-center">
             {/* Mission Statement */}
-            <div className="mission text-center md:mt-36 md:mx-auto md:w-4/6" style={{paddingLeft: '26px',paddingRight:'26px'}}>
-                <h1 className="text-orange-400 text-center text-xl pt-10" style={{fontFamily:'orbitron'}}>Our Mission</h1>
-                <h1 className=" font-bold text-xl text-black text-center justify-between pr-5 pl-5 mt-5  md:text-6xl " style={{fontFamily:'orbitron', letterSpacing:'.20rem'}} >Bringing order to the digital world, one project at a time.</h1>
-                <p className="text-black text-center pr-8 pl-8 mt-11 md:text-xl">We embrace the chaos of the digital realm and turn it into organized brilliance. As a remote software development company, we thrive on challenges and excel in crafting innovative solutions.</p>
+            <div className="mission md:mt-36 md:mx-auto md:w-4/6" style={{paddingLeft: '26px',paddingRight:'26px'}}>
+                <h1 className="text-orange-400 text-xl pt-10" style={{fontFamily:'orbitron'}}>Our Mission</h1>
+                <h1 className="font-bold text-xl text-black justify-between pr-5 pl-5 mt-5 md:text-6xl" style={{fontFamily:'orbitron', letterSpacing:'.20rem'}}>Bringing order to the digital world, one project at a time.</h1>
+                <p className="text-black pr-8 pl-8 mt-11 md:text-xl">We embrace the chaos of the digital realm and turn it into organized brilliance. As a remote software development company, we thrive on challenges and excel in crafting innovative solutions.</p>
             </div>
 
             {/* Divider */}
-            <div class="border-t border-orange-900 my-32"></div>
+            <div className="border-t border-orange-900 my-32"></div>
 
-           
-           
+            {/* Our Services */}
+            <div id='services'className="services" style={{paddingLeft: '26px',paddingRight:'26px'}}></div>
            
            
             {/* Our Services */}
@@ -115,6 +115,10 @@ export default function about() {
                         <h2 className="font-bold text-xl">Sammad Saeed</h2>
                         <p   >Full Stack Developer</p>
                     </div>
+            </div>
+
+            <div className='flex items-center justify-center mt-10 mb-10 overflow-auto' style={{}}>
+                <Maps></Maps>
             </div>
 
         </div>

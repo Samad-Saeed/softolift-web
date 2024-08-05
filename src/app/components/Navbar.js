@@ -7,7 +7,7 @@ import Contact from './Contact';
 const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [isScrolled, setScrolled] = useState(false);
-    const [isContactOpen, setIsContactOpen] = useState(false);
+    const [isContactFormOpen, setContactFormOpen] = useState(false);
 
     const toggleMobileMenu = () => {
         setMobileMenuOpen(!isMobileMenuOpen);
@@ -21,27 +21,20 @@ const Navbar = () => {
         }
     };
 
+    const openContactForm = () => {
+        setContactFormOpen(true);
+    };
+
+    const closeContactForm = () => {
+        setContactFormOpen(false);
+    };
+
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
-    useEffect(() => {
-        if (isContactOpen) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = 'auto';
-        }
-    
-        // Cleanup function to reset the overflow property when the component unmounts
-        return () => {
-            document.body.style.overflow = 'auto';
-        };
-    }, [isContactOpen]);
-
-
 
     return (
         <header className={`body-font ${isScrolled ? 'blur-bg' : ''} sticky top-0 transition duration-150 ease-in-out z-50`} style={{ color: '#FF5733'}}>
@@ -61,34 +54,24 @@ const Navbar = () => {
                     {
                         !isMobileMenuOpen && (
                         <>
-                        <Link href="/" className="mr-5 transition delay-75 duration-150 ease-in-out hover-text ">Services</Link>
-                        <Link href="/" className="mr-5 transition delay-75 duration-150 ease-in-out hover-text ">About Us</Link>
-                        <button onClick={() => setIsContactOpen(true)} className="mr-5 transition delay-75 duration-150 ease-in-out hover-text ">Contact Us</button>
+                        <Link href="#projects" className="mr-5 transition delay-75 duration-150 ease-in-out hover-text ">Projects</Link>
+                        <Link href="#services" className="mr-5 transition delay-75 duration-150 ease-in-out hover-text ">Services</Link>
+                        <Link href="#aboutus" className="mr-5 transition delay-75 duration-150 ease-in-out hover-text ">About Us</Link>
+                        <Link href="/contact" className="mr-5 transition delay-75 duration-150 ease-in-out hover-text ">Contact Us</Link>
+                        {/* <button onClick={openContactForm} className="my-2 transition delay-75 duration-150 ease-in-out hover-text ">Contact Us</button> */}
                         </>
                         )
                     }
                 </nav>
-                {isContactOpen && (
-                    <div style={{ position: 'fixed', top: 0, right: 0, width: '100%', height: '100%', backgroundColor: '#141817' }}>
-                    <button className="float-right mr-5 mt-5  "onClick={() => setIsContactOpen(false)}>X</button>
-                    <Contact />
-                    </div>
-                )}
                 {isMobileMenuOpen && (
-                    <div className="flex flex-col items-center justify-center text-xl" style={{maxWidth: '768px'}}>
+                    <div className="flex flex-col items-center justify-center text-xl" style={{}}>
                         <Link href="/" className="my-2 transition delay-75 duration-150 ease-in-out hover-text ">Services</Link>
                         <Link href="/" className="my-2 transition delay-75 duration-150 ease-in-out hover-text ">About Us</Link>
-                        <Link href="/" className="my-2 transition delay-75 duration-150 ease-in-out hover-text ">Contact Us</Link>
+                        {/* <button onClick={openContactForm} className="my-2 transition delay-75 duration-150 ease-in-out hover-text ">Contact Us</button> */}
                     </div>
                 )}
-                {!isContactOpen && (
-                    <button className="md:hidden focus:outline-none fixed top-0 right-0 mr-5 mt-8" style={{maxWidth: '768px'}} onClick={toggleMobileMenu}>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
-                        <path d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                    </button>
-                    )}
             </div>
+            {/* {isContactFormOpen && <Contact onClose={closeContactForm} />} */}
         </header>
     );
 };
